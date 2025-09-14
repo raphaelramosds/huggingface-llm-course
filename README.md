@@ -6,7 +6,7 @@ Para executar com sucesso os exemplos desse repositório, é necessário instala
 
 ```bash
 # Instalação de pacotes do Linux
-sudo apt-get install git make
+sudo apt-get install git make python3
 
 # Instalação do poetry
 curl -sSL https://install.python-poetry.org | python3 -
