@@ -2,18 +2,11 @@
 
 ## Dependências
 
-Para executar com sucesso os exemplos desse repositório, é necessário instalar as seguintes dependências
+O comando abaixo irá funcionar apenas se você configurou o Poetry corretamente. Para isso, siga as instruções em [Poetry: instalação e configuração](./docs/poetry/)
 
 ```bash
-# Instalação de pacotes do Linux
-sudo apt-get install git make python3
-
-# Instalação do poetry
-curl -sSL https://install.python-poetry.org | python3 -
-export PATH="/home/$USER/.local/bin:$PATH:"
+poetry install
 ```
-
->💡**NOTE:** O último comando precisará ser adicionado ao .zhrc ou .bashrc para que o poetry possa ser chamado de qualquer diretório do terminal
 
 ## Reconhecimento
 

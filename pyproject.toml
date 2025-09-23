@@ -1,0 +1,25 @@
+[project]
+name = "huggingface-llm-course"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Raphael Ramos", email = "raphael.opensource@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["transformers[sentencepiece] (>=4.56.2,<5.0.0)", "ipykernel (>=6.30.1,<7.0.0)", "torch (>=2.8.0,<3.0.0)"]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[[tool.poetry.source]]
+name = "pytorch_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+
+[tool.poetry.dependencies]
+torch = {version = ">=2.8.0,<3.0.0", source = "pytorch_cpu"}
