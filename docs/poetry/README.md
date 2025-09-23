@@ -4,7 +4,7 @@
 
 ```shell
 # Instalação de pacotes do Linux
-sudo apt-get install git make python3
+sudo apt-get install git make python3 ffmpeg
 
 # Instalação do poetry
 curl -sSL https://install.python-poetry.org | python3 -
@@ -22,7 +22,7 @@ Esse passo é útil caso queira configurar as dependências do Poetry do zero
 poetry source add --priority explicit pytorch_cpu https://download.pytorch.org/whl/cpu
 
 # Adicionar e instalar dependencias
-poetry add --source pytorch_cpu torch "transformers[sentencepiece]" ipykernel
+poetry add --source pytorch_cpu torch "transformers[sentencepiece]" ipykernel Pillow ffmpeg ffmpeg-python
 
 # Instalar dependencias
 poetry install
